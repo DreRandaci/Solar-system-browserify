@@ -1,7 +1,5 @@
 'use strict';
 
-let outputContainer = document.getElementById('DOMoutput');
-
 const earth = require('./earth'); 
 const jupiter = require('./jupiter'); 
 const mars = require('./mars'); 
@@ -18,4 +16,4 @@ mars(document.getElementById('marsContainer'));
 jupiter(document.getElementById('jupiterContainer'));
 saturn(document.getElementById('saturnContainer'));
 uranus(document.getElementById('uranusContainer'));
-neptune(document.getElementById('venusContainer'));
+neptune(document.getElementById('neptuneContainer'));

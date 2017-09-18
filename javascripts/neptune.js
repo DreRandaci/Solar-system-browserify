@@ -12,12 +12,11 @@ const getNeptune =
 		'Probes': 'Voyager 2'
 };
 
-const outputSaturn = (output) => {
-    output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
+const outputNeptune = (output) => {
     for (let key in getNeptune) {
         output.innerHTML += `<h4>${key}: ${getNeptune[key]}</h4>`;
-    }   
-    output.innerHTML += `</div>`;   
+    }
+    output.innerHTML += `<img class='planetImg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Neptune_Full.jpg/260px-Neptune_Full.jpg'>`;    
 };
 
-module.exports = outputSaturn;
+module.exports = outputNeptune;

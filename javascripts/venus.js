@@ -13,11 +13,10 @@ const getVenus =
 };
 
 const outputVenus = (output) => {
-    output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
     for (let key in getVenus) {
         output.innerHTML += `<h4>${key}: ${getVenus[key]}</h4>`;
-    }   
-    output.innerHTML += `</div>`;   
+    }
+    output.innerHTML += `<img class='planetImg' src='https://upload.wikimedia.org/wikipedia/commons/8/85/Venus_globe.jpg'>`;   
 };
 
 module.exports = outputVenus;    

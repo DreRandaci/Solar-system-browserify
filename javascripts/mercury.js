@@ -13,12 +13,10 @@ const getMercury =
 };
 
 const outputMercury = (output) => {
-    // let container += `<div class='col-md-4 col-sm-6 planetCard'>`;
     for (let key in getMercury) {
-        container += `<h4>${key}: ${getMercury[key]}</h4>`;
-    }   
-    // container += `</div>`;
-    output.innerHTML += container;   
+        output.innerHTML += `<h4>${key}: ${getMercury[key]}</h4>`;
+    }
+    output.innerHTML += `<img class='planetImg' src='https://www.nasa.gov/sites/default/files/mercury_1.jpg'>`;      
 };
 
 module.exports = outputMercury;

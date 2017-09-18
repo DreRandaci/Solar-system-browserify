@@ -13,11 +13,10 @@ const getSaturn =
 };
 
 const outputSaturn = (output) => {
-    output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
     for (let key in getSaturn) {
         output.innerHTML += `<h4>${key}: ${getSaturn[key]}</h4>`;
-    }   
-    output.innerHTML += `</div>`;   
+    }
+    output.innerHTML += `<img class='planetImg' src='http://nssdc.gsfc.nasa.gov/image/planetary/saturn/saturn.jpg'>`;      
 };
 
 module.exports = outputSaturn;

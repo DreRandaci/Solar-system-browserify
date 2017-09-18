@@ -12,11 +12,10 @@ const getJupiter =
 };
 
 const outputJupiter = (output) => {
-	output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
 	for (let key in getJupiter) {
 		output.innerHTML += `<h4>${key}: ${getJupiter[key]}</h4>`;
-	}	
-	output.innerHTML += `</div>`;	
+	}
+	output.innerHTML += `<img class='planetImg' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hubble_Captures_Vivid_Auroras_in_Jupiter's_Atmosphere.jpg/220px-Hubble_Captures_Vivid_Auroras_in_Jupiter's_Atmosphere.jpg">`;				
 };
 
 module.exports = outputJupiter;

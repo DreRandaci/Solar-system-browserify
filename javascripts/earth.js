@@ -12,11 +12,10 @@ let getEarth = {
 };
 
 const outputEarth = (output) => {
-	output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
 	for (let key in getEarth) {
 		output.innerHTML += `<h4>${key}: ${getEarth[key]}</h4>`;
-	}	
-	output.innerHTML += `</div>`;	
+	}
+	output.innerHTML += `<img class='planetImg' src='https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg'>`;		
 };
 
 module.exports = outputEarth;

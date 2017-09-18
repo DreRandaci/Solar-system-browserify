@@ -13,11 +13,10 @@
 };
 
 const outputMars = (output) => {
-    output.innerHTML += `<div class='col-md-4 col-sm-6 planetCard'>`;
     for (let key in getMars) {
         output.innerHTML += `<h4>${key}: ${getMars[key]}</h4>`;
-    }   
-    output.innerHTML += `</div>`;   
+    }      
+    output.innerHTML += `<img class='planetImg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mars_23_aug_2003_hubble.jpg/275px-Mars_23_aug_2003_hubble.jpg'>`;     
 };
 
 module.exports = outputMars;

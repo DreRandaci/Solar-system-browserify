@@ -1,27 +1,18 @@
+
+body { 
+  background: url("http://www.kubipet.com/data/out/179/iwp781064872-universe-wallpapers.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h4 {
+	color: white;
+}
+
 .planetCard {
-
+	height: 800px;
+	background: transparent;
 };
-#mercury {
 
-};
-#venus {
-
-};
-#earth {
-
-};
-#mars {
-
-};
-#jupiter {
-
-};
-#saturn {
-
-};
-#uranus {
-
-};
-#neptune {
-
-};
